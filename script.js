@@ -1,8 +1,8 @@
- // ─ 1. modo oscuro ─
+ // 1. modo oscuro 
     const btnTheme  = document.getElementById('btn-theme');
     const html      = document.documentElement;
 
-    // Recuperar preferencia guardada en localStorage
+    // Recuperar preferencia guardada
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       html.setAttribute('data-theme', savedTheme);
@@ -18,7 +18,7 @@
     });
 
 
-    // ─ 2. MENÚ HAMBURGUESA (móvil) ─
+    // 2. menu hamburgusa ─
     const hamburger = document.getElementById('hamburger');
     const nav       = document.getElementById('main-nav');
 
@@ -28,7 +28,7 @@
       hamburger.setAttribute('aria-expanded', isOpen);
     });
 
-    // Cerrar menú al hacer clic en un enlace
+    // Cerrar menú al hacer clic
     nav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('open');
@@ -38,7 +38,7 @@
     });
 
 
-    // ─ 3. VALIDACIÓN DEL FORMULARIO ─
+    // 3. validar la formula
     const form       = document.getElementById('contact-form');
     const formSuccess = document.getElementById('form-success');
 
@@ -58,7 +58,7 @@
       return valid;
     }
 
-    // Limpiar error al escribir
+    // Limpiar error
     ['nombre', 'email', 'asunto', 'mensaje'].forEach(id => {
       document.getElementById(id).addEventListener('input', () => {
         showError(id, 'err-' + id, false);
@@ -74,14 +74,14 @@
       const okMensaje = validateField('mensaje', 'err-mensaje', v => v.length >= 10);
 
       if (okNombre && okEmail && okAsunto && okMensaje) {
-        // Simular envío exitoso
+        // simular el envio 
         form.style.display = 'none';
         formSuccess.classList.add('show');
       }
     });
 
 
-    // ─ 4. ANIMACIÓN DE ENTRADA (Intersection Observer) ─
+    // 4. animacion de entrada
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -93,7 +93,7 @@
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   
-    // ── Cursor animacion ─
+    // Cursor animacion
     const dot  = document.getElementById('cursor-dot');
     const ring = document.getElementById('cursor-ring');
 
@@ -102,13 +102,13 @@
       ring.style.transform = `translate(${e.clientX - 18}px, ${e.clientY - 18}px)`;
     });
 
-    // Agrandar cursor al pasar sobre links y botones
+    // 
     document.querySelectorAll('a, button, .card').forEach(el => {
       el.addEventListener('mouseenter', () => ring.classList.add('expand'));
       el.addEventListener('mouseleave', () => ring.classList.remove('expand'));
     });
 
-    // ─ PARTÍCULAS AL HACER CLICK ─
+    // particaulas para el click
     document.addEventListener('click', e => {
       const count = 8;
       for (let i = 0; i < count; i++) {
@@ -126,7 +126,7 @@
       }
     });
 
-    // ─ SCROLL PROGRESS BAR ─
+    // scroll progreso
     const scrollBar = document.getElementById('scroll-bar');
     document.addEventListener('scroll', () => {
       const total   = document.body.scrollHeight - window.innerHeight;
@@ -134,7 +134,7 @@
       scrollBar.style.width = percent + '%';
     });
 
-    // ─ PARALLAX SUTIL EN HERO ─
+    // ─ paralax en hero 
     const heroText = document.querySelector('.hero-text');
     document.addEventListener('mousemove', e => {
       const x = (e.clientX / window.innerWidth  - .5) * 12;
@@ -142,7 +142,7 @@
       if (heroText) heroText.style.transform = `translate(${x}px, ${y}px)`;
     });
 
-    // ─ GLOW EN TARJETAS según posición del mouse ─
+    // ─ GLOW en tarjetas
     document.querySelectorAll('.card').forEach(card => {
       card.addEventListener('mousemove', e => {
         const rect = card.getBoundingClientRect();
