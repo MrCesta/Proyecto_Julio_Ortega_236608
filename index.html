@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional | Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="scroll-bar" id="scroll-bar"></div>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- HEADER + NAV -->
+<header>
+  <div class="nav-inner">
+    <span class="logo">Uni<span>.</span>presentacion</span>
+
+    <nav id="main-nav" role="navigation" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#Habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-controls">
+      <button class="btn-theme" id="btn-theme" aria-label="Cambiar tema">🌙 Tema</button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main>
+  <!-- HERO -->
+  <section id="inicio" aria-label="Presentación">
+    <div class="hero-text fade-in">
+      <p class="section-label">// Desarrollador Full Stack</p>
+      <h1>Hola, soy<em>Julio Ortega. </em></h1>
+      <p>Construyo paginas web rápidas accesibles y visualmente memorables. Apasionado por hacer código limpio.</p>
+      <div class="hero-badges">
+        <div class="hero-badge"><span>📍</span> Cd. Juárez, Chih.</div>
+        <div class="hero-badge"><span>🎓</span> UACJ · SEI</div>
+        <div class="hero-badge"><span>🎂</span> 21 años</div>
+      </div>
+      <div class="hero-cta">
+        <a href="#Habilidades" class="btn btn-primary">Ver Habilidades</a>
+        <a href="#contacto" class="btn btn-outline">Contáctame</a>
+      </div>
+    </div>
+    <img class="hero-photo fade-in" src="Imagen.jpeg" alt="Foto de perfil de Tu Nombre, desarrollador web" loading="eager" />
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" aria-labelledby="h-sobre">
+    <p class="section-label fade-in">// Sobre mí</p>
+    <h2 id="h-sobre" class="fade-in">Tecnologías<br>que domino</h2>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>Soy ingeniero en Sitemas Electronicos Inteligentes y programador web con enfoque de construir productos digitales que combinan funcionalidad y estética. Me especializo en la electronica y el uso de software con experiencia en la automatización.</p>
+        <p>Cuando no estoy programando, contribuyo a proyectos open-source y escribo sobre desarrollo web y proyectos pequeños de electronica.</p>
+      </div>
+      <dl class="tech-list fade-in">
+        <dt>Frontend</dt>
+        <dd>React.js, HTML5 semántico, CSS3, Tailwind CSS, Figma</dd>
+        <dt>Backend</dt>
+        <dd>Node.js, Express.js, REST APIs, GraphQL</dd>
+        <dt>DevOps & Herramientas</dt>
+        <dd>Git, GitHub Actions, Docker, Vercel, Linux</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section id="educacion" aria-labelledby="h-edu">
+    <p class="section-label fade-in">// Formación</p>
+    <h2 id="h-edu" class="fade-in">Historial<br>Educativo</h2>
+    <ol class="edu-list fade-in">
+      <li class="active">
+        <div class="edu-card">
+          <div class="edu-card-header">
+            <h3>Ingeniería en Sistemas Electrónicos Inteligentes (SEI)</h3>
+            <span class="edu-badge badge-active" data-es="EN CURSO" data-en="IN PROGRESS">EN CURSO</span>
+          </div>
+          <p class="edu-school">Universidad Autónoma de Ciudad Juárez (UACJ)</p>
+          <p class="edu-date">📅 2022 – Actualidad · 3 años completados</p>
+          <p class="edu-desc">Carrera enfocada en electrónica inteligente, sistemas embebidos e inteligencia artificial. Cursando materias avanzadas en Programación especializada, Electrónica, Diseño de circuitos.</p>
+          <div class="edu-tags">
+            <span class="edu-tag">Sistemas Embebidos</span>
+            <span class="edu-tag">Electrónica Analógica y Digital</span>
+            <span class="edu-tag">Programación Avanzada</span>
+            <span class="edu-tag">Automatización</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="edu-card">
+          <div class="edu-card-header">
+            <h3>Preparatoria (Electrónica)</h3>
+            <span class="edu-badge badge-done" data-es="COMPLETADO" data-en="COMPLETED">COMPLETADO</span>
+          </div>
+          <p class="edu-school">Centro de Bachillerato Tecnológico Industrial #128 Ciudad Juárez, Chihuahua</p>
+          <p class="edu-date">📅 2017 – 2020</p>
+          <p class="edu-desc">Formación media superior con orientación hacia ciencias exactas e ingeniería con certificado en especialiste de electronica.</p>
+        </div>
+      </li>
+      <li>
+        <div class="edu-card">
+          <div class="edu-card-header">
+            <h3>Secundaria</h3>
+            <span class="edu-badge badge-done" data-es="COMPLETADO" data-en="COMPLETED">COMPLETADO</span>
+          </div>
+          <p class="edu-school"> Tecnica #80Ciudad Juárez, Chihuahua</p>
+          <p class="edu-date">📅 2014 – 2017</p>
+          <p class="edu-desc">Educación básica con enfoque en matemáticas y ciencias naturales.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="Habilidades" aria-labelledby="h-proj">
+    <p class="section-label fade-in">// Habilidades</p>
+    <h2 id="h-proj" class="fade-in">Galería de<br>Habilidades</h2>
+    <div class="projects-grid">
+      <article class="card fade-in">
+        <h3>Este Portafolio</h3>
+        <p>este sitio web personal construido desde cero, sin frameworks, aplicando HTML5 semántico, CSS Grid/Flexbox y JS vanilla.</p>
+        <div class="card-links"></div>
+      </article>
+      <article class="card fade-in">
+        <h3>Electronica</h3>
+        <p>Electronica avanzada uso de componentes electronicos y diseño de circuitos al igual simulaciones.</p>
+        <div class="card-links"></div>
+      </article>
+      <article class="card fade-in">
+        <h3>Uso de software</h3>
+        <p>Implementacion y uso de sowtfware como multisim, VHDL simulaciones.</p>
+        <div class="card-links"></div>
+      </article>
+      <article class="card fade-in">
+        <h3>Competencias</h3>
+        <p>Adaptabilidad en entornos industriales al igual que pensamientos logicos.</p>
+        <div class="card-links"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" aria-labelledby="h-contact">
+    <p class="section-label fade-in">// Contacto</p>
+    <h2 id="h-contact" class="fade-in">¿Contactame?</h2>
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <p>Estoy disponible para trabajos, oportunidades de trabajo. No dudes en llamarme.</p>
+        <div class="contact-links">
+          <a href="https://mail.google.com/mail/?view=cm&to=cesarinjr400@gmail.com" target="_blank">📧 cesarinjr400@gmail.com</a>
+          <a href="https://github.com/MrCesta" target="_blank" rel="noopener">🐙 github.com/MrCesta</a>
+          <a href="https://instagram.com/mr._.cesta" target="_blank" rel="noopener">📸 instagram.com/mr._.cesta</a>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="form-success" id="form-success" role="alert">
+          ¡Mensaje enviado correctamente! Te responderé pronto.
+        </div>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" />
+            <span class="field-error" id="err-nombre">Por favor ingresa tu nombre.</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email" />
+            <span class="field-error" id="err-email">Ingresa un correo electrónico válido.</span>
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="¿De qué se trata?" />
+            <span class="field-error" id="err-asunto">Indica el asunto del mensaje.</span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+            <span class="field-error" id="err-mensaje">El mensaje no puede estar vacío.</span>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:.5rem;">Enviar mensaje →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p> 2026 Julio Ortega · Construido con HTML, CSS y JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
