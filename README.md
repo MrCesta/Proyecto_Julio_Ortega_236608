@@ -1,6 +1,6 @@
-# Portafolio Proyecto Julio Cesar Ortega Alba 236608
+# Portafolio Proyecto Julio Cesar Ortega Alba #236608
 
-Este es un proyecto de **WebStack** moderno y minimalista, diseñado para presentar mi trayectoria como Ingeniero en Sistemas Electrónicos Inteligentes (SEI). El sitio se centra en la experiencia de usuario (UX) y el rendimiento, utilizando tecnologías web nativas sin frameworks externos.
+Este es un proyecto de **WebStack** moderno y minimalista, diseñado para presentar mi trayectoria como Ingeniero en Sistemas Electrónicos Inteligentes (SEI).
 ---
 ## Características Principales
 
